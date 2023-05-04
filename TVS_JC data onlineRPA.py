@@ -55,11 +55,11 @@ def auth():
     EC.presence_of_element_located((By.XPATH,"/html/body/div[1]/div[4]/form/input[1]"))
     )
     uid_ninja.click()
-    uid_ninja.send_keys("upload")
+    uid_ninja.send_keys("uidName")
     
     
     passwordofninjauploader = driver.find_element(By.XPATH,"/html/body/div[1]/div[4]/form/input[2]")
-    passwordofninjauploader.send_keys("upload")
+    passwordofninjauploader.send_keys("passWord")
 
     submit_button = driver.find_element(By.XPATH,"/html/body/div[1]/div[4]/form/input[4]")
     submit_button.click()
